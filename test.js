@@ -1,14 +1,10 @@
 let car = {
-  color: "green",
-  maxSpeed: "250",
-  audio: {
-    brand: "sony",
-    speakers: 12,
-  },
+  maxSpeed: 280,
+  update: speedChange,
 };
 
-car.color = "red";
+car.update();
 
-console.log(typeof car.audio.brand);
-
-console.log(car.audio);
+function speedChange() {
+  console.log(car.maxSpeed);
+}
